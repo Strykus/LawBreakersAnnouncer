@@ -1,6 +1,11 @@
 # LawBreakersAnnouncer
 Law Breakers Announcer for Titanfall 2
 
+### Thanks those people for translating
+
+- **French:** *Rémy#8347*
+- **German:** *CarryPotter#8441*
+
 Was used Modified code from [Hallo Announcer Mod](https://captaindiqhedd.gitbook.io/caps-titanfall-2-mods/mods/announcers/halo-announcer/halo-announcer-install)
 
 # NOTE
