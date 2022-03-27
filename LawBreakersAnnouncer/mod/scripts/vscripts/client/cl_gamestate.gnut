@@ -5,6 +5,7 @@ int startminute=0
 
 int setannouncer=0
 int announcer=1
+int countdownnumber=0
 
 int fivemin=0
 int tenmin=0
@@ -493,7 +494,7 @@ void function ClGameStateThink_Playing( entity player )
 	if ( endTime - Time() < 99999.0 && setannouncer==0 )
 	{
 		//announcer=RandomInt(4)
-		int countdownnumber=RandomInt(2)
+		//countdownnumber=RandomInt(2)
 		GetLocalClientPlayer().ClientCommand("alias perfection \"playvideo perfection 1 1; playvideo videoperfection 100 100; playvideo popup5 1 1;\"")
 		GetLocalClientPlayer().ClientCommand("alias intro0 \"playvideo intro0 1 1;\"")
 		GetLocalClientPlayer().ClientCommand("alias intro1 \"playvideo intro1 1 1;\"")
@@ -571,14 +572,16 @@ void function ClGameStateThink_Playing( entity player )
 	{
 		sayfivemin=1
 	}
-	if ( endTime - Time() < 121.0 && GAMETYPE!=SPEEDBALL && GAMETYPE!=LAST_TITAN_STANDING && endTime - Time() > 118.0 && sayfivemin==1)
+	/*
+	if ( endTime - Time() < 121.0 && GAMETYPE!=SPEEDBALL && GAMETYPE!=LAST_TITAN_STANDING && endTime - Time() > 118.0 && saytwomin==1)
 	{
-		if ( fivemin==0 )
+		if ( twomin==0 )
 		{
 			GetLocalClientPlayer().ClientCommand("countdown2min_"+announcer)
-			fivemin=1
+			twomin=1
 		}
 	}
+	*/
 	if ( endTime - Time() < 301.0 && GAMETYPE!=SPEEDBALL && GAMETYPE!=LAST_TITAN_STANDING && endTime - Time() > 298.0 && sayfivemin==1)
 	{
 		if ( fivemin==0 )
@@ -586,13 +589,24 @@ void function ClGameStateThink_Playing( entity player )
 			GetLocalClientPlayer().ClientCommand("countdown5min_"+announcer)
 			fivemin=1
 		}
-	}	
+	}
 	if ( endTime - Time() < 601.0 && GAMETYPE!=SPEEDBALL && GAMETYPE!=LAST_TITAN_STANDING && endTime - Time() > 598.0 )
 	{
 		if ( tenmin==0 )
 		{
+		//int countdownnumber=RandomInt(2)
 			GetLocalClientPlayer().ClientCommand("countdown10min_"+announcer)
 			tenmin=1
+		}
+	}
+	if ( endTime - Time() < 121.0 && GAMETYPE!=SPEEDBALL && GAMETYPE!=LAST_TITAN_STANDING && endTime - Time() > 118.0 )
+	{
+		if ( twomin==0 )
+		{
+		countdownnumber=RandomInt(2)
+			GetLocalClientPlayer().ClientCommand("countdown2min_"+countdownnumber+"1 1")
+			GetLocalClientPlayer().ClientCommand("playvideo countdown2min_"+countdownnumber+" 1 1")
+			twomin=1
 		}
 	}
 	if ( endTime - Time() < 60.0 && GAMETYPE!=SPEEDBALL && GAMETYPE!=LAST_TITAN_STANDING && almostdone==0 )
@@ -617,8 +631,9 @@ void function ClGameStateThink_Playing( entity player )
 	{
 		if ( ten==0 )
 		{
-		
-			GetLocalClientPlayer().ClientCommand("countdown10_"+announcer)
+		countdownnumber=RandomInt(2)
+			GetLocalClientPlayer().ClientCommand("countdown10_"+countdownnumber+" 1 1")
+			GetLocalClientPlayer().ClientCommand("playvideo countdown10_"+countdownnumber+" 1 1")
 			ten=1
 		}
 	}
