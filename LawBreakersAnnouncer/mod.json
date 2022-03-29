@@ -1,7 +1,13 @@
 {
-	"Name" : "Law Breakers Announcer",
-	"Description" : "Adds the Law Breakers Announcer into your game",
-	"Version": "1.0.0",
-	"LoadPriority": 4,
+  "Name": "Law Breakers Announcer",
+  "Description": "Adds the Law Breakers Announcer into your game",
+  "Version": "1.0.0",
+  "LoadPriority": 4,
+	"Scripts": [
+		{
+			"Path": "",
+			"RunOn": "CLIENT"
 
+		}
+	]
 }
