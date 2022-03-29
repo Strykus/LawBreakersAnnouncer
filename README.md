@@ -1,9 +1,14 @@
 # LawBreakersAnnouncer
 Law Breakers Announcer for Titanfall 2
+![LawBreakersAnnouncer](https://user-images.githubusercontent.com/37307454/160692167-410213de-9276-4294-bfdb-d2cd052bbb37.png)
 
+### Available languages:
+- English
+- German
+- ~~French~~
 ### Thanks those people for translating
 
-- **French:** *Rémy#8347*
+- **French:** **[Not Ready]
 - **German:** [@ForkGitAboutDre](https://github.com/ForkGitAboutDre)
 
 
@@ -16,3 +21,8 @@ Name of the `*.bik` files same as **Hallo Announcer**, so **if you have installe
 Put files **LawBreakersAnnouncerMEDIA.zip>bik** in `~Titanfall2\r2\media`
 
 Put  **LawBreakersAnnouncer** folder in `~Titanfall2\R2Northstar\mods`
+
+-----------------------------------------------------------------------------------------
+v1.0.0
+- English and German Voicelines.
+- French version will be soon.
