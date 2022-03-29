@@ -7,7 +7,7 @@ Law Breakers Announcer for Titanfall 2
 - German
 - ~~French~~
 ### Thanks those people for translating
-
+- English [@morebagels](https://github.com/morebagels)
 - **French:** **[Not Ready]
 - **German:** [@ForkGitAboutDre](https://github.com/ForkGitAboutDre)
 
