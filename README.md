@@ -1,5 +1,5 @@
 # LawBreakersAnnouncer
-Law Breakers Announcer for Titanfall 2
+
 ![LawBreakersAnnouncer](https://user-images.githubusercontent.com/37307454/160692167-410213de-9276-4294-bfdb-d2cd052bbb37.png)
 
 ### Available languages:
