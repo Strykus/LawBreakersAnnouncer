@@ -22,7 +22,3 @@ Put files **LawBreakersAnnouncerMEDIA.zip>bik** in `~Titanfall2\r2\media`
 
 Put  **LawBreakersAnnouncer** folder in `~Titanfall2\R2Northstar\mods`
 
------------------------------------------------------------------------------------------
-v1.0.0
-- **English** and **German** Voice lines.
-- **French** version will be soon.
