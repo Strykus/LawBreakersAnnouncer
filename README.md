@@ -5,10 +5,10 @@
 ### Available languages:
 - English
 - German
-- ~~French~~
+- French
 ### Thanks those people for translating
 - *English:* **[@morebagels](https://github.com/morebagels)**
-- *French:* **[Not Ready]**
+- *French:* **Rémy#8347**
 - *German:* **[@ForkGitAboutDre](https://github.com/ForkGitAboutDre)**
 
 
