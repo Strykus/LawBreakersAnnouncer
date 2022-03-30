@@ -670,6 +670,7 @@ function Obituary( entity attacker, string attackerClass, entity victim, int scr
 		if ( isDeathSuicide && death!=4 && death!=6 )
 		{
 			GetLocalClientPlayer().ClientCommand("playvideo suicide 1 1")
+			wait 1.25
 			/*if(medalcallactive == 0)
 				thread suicide()
 			else
@@ -1498,7 +1499,7 @@ void function medalCall()
 	if(revenge == 1)
 	{
 		revenge=2
-		int revengenumber=RandomInt(2)
+		int revengenumber=RandomInt(3)
         GetLocalClientPlayer().ClientCommand("playvideo revenge_"+revengenumber+" 1 1")
 		//GetLocalClientPlayer().ClientCommand("playvideo revenge_1 1 1; playvideo videorevenge 100 100; playvideo popup2 1 1")
 		wait 1.5
